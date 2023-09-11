@@ -1,0 +1,78 @@
+.tip-pcnt-ctr{
+    width: 100%;
+    height: 40%;
+}
+
+.btn-grid{
+    width: 100%;
+    height: 100%;
+    background-color: var(--backgroundWhite);
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pcnt-button-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
+    width: 48%;
+    /* gap: 5%; */
+    border-radius: 5px;
+    border:none;
+    overflow: hidden;
+    position: relative;
+}
+
+[name="pcnt-radio-btn"]{
+    opacity:0;
+    position:absolute;
+    inset:0;
+}
+
+[name="pcnt-radio-btn"]:hover{
+    cursor: pointer;
+}
+
+.button-body{
+    background-color: var(--darkGreen);
+    color: var(--white);
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+[name="pcnt-radio-btn"]:hover + div {
+    border: 2px solid var(--strongCyan);
+}
+
+.custom{
+    background-color: var(--inputBox);;
+    color: var(--greyText);
+    outline:none;
+    border: none;
+    text-align: center;
+}
+
+.pcnt-button-wrapper:nth-child(even){
+    margin-left: 4%;
+}
+
+@media(min-width:1024px){
+    .btn-grid{
+        gap:5%;
+        height:80%;
+    }
+    .pcnt-button-wrapper{
+        width:30%;
+        height: 44%;
+    }
+    .pcnt-button-wrapper:nth-child(even){
+    margin-left: 0;
+}
+
+}

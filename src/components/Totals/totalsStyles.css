@@ -1,0 +1,25 @@
+.totals-cntr{
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.totals-title-cntr{
+    display: flex;
+    flex-direction: column;
+}
+
+.totals-title{
+    color: white;
+    font-size: .8rem;
+}
+
+.totals-pp-txt{
+    color: var(--inputBox);
+    font-size: .7rem;
+}
+
+.totals-amount-txt{
+    color: var(--strongCyan);
+    font-size: 1.5rem;
+}

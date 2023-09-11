@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+
+// CONTEXT IMPORT
+import { BillContextProvider } from './context/BillContext';
+
+//  COMPONENT IMPORT
+import CardBackground from './components/Cards/CardBackground';
+import CardTotals from './components/Cards/CardTotals';
+import CardCalculationsBG from './components/Cards/CardCalculations';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BillContextProvider>
+      <div className="app">
+        <div className="title-container">
+          <h2 className="title-text">SPLI</h2>
+          <h2 className="title-text">TTER</h2>
+        </div>
+        <CardBackground>
+          <CardCalculationsBG></CardCalculationsBG>
+          <CardTotals></CardTotals>
+        </CardBackground>
+      </div>
+    </BillContextProvider>
   );
 }
 

@@ -1,0 +1,55 @@
+.card-background{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 85%;
+    background-color: var(--backgroundWhite) ;
+    border-radius: 25px 25px 0 0 ;
+    gap:1rem;
+}
+
+.card-totals {
+    background-color: var(--darkGreen);
+    width:90%;
+    height:40%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.card-calc-bg{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:90%;
+    height:50%;
+    background-color: var(--backgroundWhite);
+    margin-bottom: 1rem;
+}
+
+
+
+@media(min-width:1024px){
+    .card-background{
+        max-width:45rem;
+        align-items: center;
+        flex-direction: row;
+        height:40%;
+        border-radius: 25px 25px 25px 25px ;
+    }
+    .card-totals{
+        width: 46%;
+        height:90%;
+    }
+    .card-calc-bg{
+        width:46%;
+        height:90%;
+        justify-content: space-around;
+    }
+
+}

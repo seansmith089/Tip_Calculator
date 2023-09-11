@@ -1,0 +1,20 @@
+.reset-btn{
+    width:90%;
+    max-height: 2rem;
+    background-color: var(--strongCyan);
+    color: var(--darkGreen);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+.reset-btn:hover{
+    cursor: pointer;
+}
+
+.reset-btn:disabled{
+    background-color: rgba(162, 165, 162, 0.596);
+}
